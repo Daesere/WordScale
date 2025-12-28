@@ -31,9 +31,19 @@ This section covers setting up your development environment for Ruby on Rails de
 
 ### Prerequisites
 
-#### 1. Ubuntu/WSL Setup (Windows users only)
+#### 1. Install VS Code
 
-If you're on Windows, install WSL2 with Ubuntu:
+**On Windows:**
+- Download and install VS Code from https://code.visualstudio.com/
+- Install the "WSL" extension in VS Code
+- Open your WSL workspace: `Ctrl+Shift+P` → "WSL: Open Folder in WSL"
+
+**On Linux:**
+- Download and install VS Code (same as Windows)
+
+#### 2. Ubuntu/WSL Setup (Windows users only)
+
+If you're on Windows, install Ubuntu with WSL:
 
 ```bash
 # In PowerShell (as Administrator)
@@ -41,14 +51,6 @@ wsl --install -d Ubuntu
 ```
 
 After installation, restart your computer and set up your Ubuntu username and password.
-
-#### 2. Install VS Code
-
-**On Windows:**
-- Download and install VS Code from https://code.visualstudio.com/
-- Install the "WSL" extension in VS Code
-- Open your WSL workspace: `Ctrl+Shift+P` → "WSL: Open Folder in WSL"
-
 
 #### 3. Install Ruby Development Dependencies
 
@@ -108,6 +110,22 @@ code --install-extension Shopify.ruby-lsp
 code --install-extension Shopify.ruby-extensions-pack
 code --install-extension bung87.rails
 ```
+
+#### 8. Open Linux Environment and Clone the Project
+
+**Accessing Linux on VS Code:**
+- Open VS Code.
+- Use the command palette: `Ctrl+Shift+P` → "WSL: Open Folder in WSL".
+- Navigate to your desired workspace directory. 
+
+**Cloning the GitHub Repository:**
+- Open the Source Control tab in VS Code (`Ctrl+Shift+G`).
+- Click "Clone Repository".
+- Paste the repository URL and select the folder where you want to clone the project.
+- Once cloned, open the project folder in VS Code.
+- Install dependencies and set up the project as described in the "Project Setup" section.
+
+
 
 ### Project Setup
 
